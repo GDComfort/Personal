@@ -5,7 +5,7 @@ button  {
     border-width: 3px;
     border-color:rgb(255, 210, 159);
     margin: 1em;
-    display: block;
+    display: inline;
 }
 button:hover {
     border-style: inset;
@@ -18,7 +18,12 @@ body {
 }
 h3 {
     color:rgb(0, 0, 0);
-    text-shadow: 1px 2px rgba(136, 124, 124, 0.363)
+    text-shadow: 1px 2px rgba(136, 124, 124, 0.363);
+    padding-left: 0.5em;
+}
+h1 {
+    padding: 0.5em;
+    padding-bottom: 0em;
 }
 div p {
     font-style: italic;
@@ -26,11 +31,64 @@ div p {
     color:rgb(255, 209, 140);
 }
 header {
-    background-size: 150px;
-    height: 150px;
+    /*background-size: 150px;
+    height: 150px; */
     background-color:antiquewhite;
 }
 div {
     background-color: inherit;
     padding: 0.5em;
 }
+main {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    margin-left: 170px;
+}
+
+@media only screen and (max-width: 1100px) {
+    button {
+        display: block;
+    }
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    div {
+        padding-left: 1em;
+    }
+    header {
+        padding-top: 1px;
+        background-size: 150px;
+        height: 150px;
+    }
+    h1 {
+        padding-top: 1em;
+        white-space: nowrap;
+    }
+    h3 {
+        padding: 0em;
+    }
+    main {
+        padding: 5em 1em;
+        margin: 0px;
+        font-size: 90%;
+        float: clear;
+    }
+}
+
+ /*PHONE CSS */
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        width: 85%;
+        text-align: center; 
+    }
+    main {
+        padding-top: 6em:;
+    }
+}
+
