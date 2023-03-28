@@ -220,7 +220,7 @@ function roundrobin() {
         }
     }
 
-    // Doesn't work above 7 elements?
+    // Doesn't work for elements larger than 7?
     for (i = 0; i < parseInt(schedlen); i++) {
         Temp = parseInt(Schd2[i]) + parseInt(WT[i]);
         TAT.push(Temp);
