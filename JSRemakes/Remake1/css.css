@@ -60,7 +60,7 @@ main {
     header {
         padding-top: 1px;
         background-size: 150px;
-        height: 150px;
+        height: 200px;
     }
     h1 {
         padding-top: 1em;
@@ -80,6 +80,9 @@ main {
  /*PHONE CSS */
 
 @media only screen and (max-width: 768px) {
+    header {
+        height: 150px;
+    }
     h1 {
         font-size: 1.1em;
         padding-top: 0.25em;
